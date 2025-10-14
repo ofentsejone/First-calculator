@@ -1,13 +1,20 @@
-var number=document.getElementByName("nine");
-//getElementsByTagName('submit')
+const display=document.getElementById("display");
 
-
-document.write(number);
-
-/*function total(num1,num2)
-{
-
-  var total=num1+5;
-  document.write("  equals to "+total);
+function appendToDisplay(input){
+  display.value+=input;
 }
- total(3);*/
+
+function clearDisplay(){
+  display.value="";
+
+}
+
+function calculate(){
+  try{
+   display.value=eval(display.value);
+  }
+  catch(error){
+    display.value="ERROR"
+  }
+
+}
