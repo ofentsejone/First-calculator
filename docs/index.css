@@ -1,37 +1,60 @@
-html{
-  background-color: black;
-  padding: 10%;
-  margin: 10%;
-  
+ 
+#display{
+    width: 200%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: grey;
+    color: aliceblue;  
 }
-.container{
-  background: gray;
-  padding: 50px;
-  padding-top: 30px;
-  margin: 10px;
-   border-radius: 15px;
-  text-align: center;
-  text-emphasis-style: none;
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    height: 900%;
+
 }
-.calculator form input{
-width: 60px;
-height: 60px;
-border-radius: 30px;
-font-style: 20px;
-color: #12ff;
-cursor: pointer;
-margin: 10px;
+#calc{
+    background-color: grey;
+    border-radius: 15px;
+    max-width:500px ;
+    overflow: hidden;
 }
-form .display{
-display: flex;
-justify-content: flex-end;
-margin: 20px 0;
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
 }
-form .display input{
-  text-align: right;
-  flex: 1;
-  font-size: 45px;
+ 
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 1rem;
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    font-size: 3rem;
+    cursor: pointer;
 }
-form input.equal{
-   width: 145px;;
+
+button:hover{
+    background-color: rgb(37, 36, 36);    
+}
+button:active{
+    background-color: rgb(226, 6, 6);
+    
+}
+
+.operator-btn{
+    background-color: brown;
+}
+.operator-btn:hover{
+    background-color: rgb(194, 144, 144);
+}
+.operator-btn:active{
+    background-color: rgb(250, 54, 5);
 }
